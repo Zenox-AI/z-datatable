@@ -149,12 +149,12 @@
                 <slot
                   v-if="slots[`item-${column}`]"
                   :name="`item-${column}`"
-                  v-bind="item"
+                  v-bind="{...item, index: i}"
                 />
                 <slot
                   v-else-if="slots[`item-${column.toLowerCase()}`]"
                   :name="`item-${column.toLowerCase()}`"
-                  v-bind="item"
+                  v-bind="{...item, index: i}"
                 />
                 <template v-else-if="column === 'expand'">
                   <i
