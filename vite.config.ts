@@ -1,4 +1,4 @@
-/* eslint-disable */ 
+/* eslint-disable */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'vue3-easy-data-table',
-      fileName: (format) => `vue3-easy-data-table.${format}.js`,
+      name: 'z-datatable',
+      fileName: (format) => `z-datatable.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

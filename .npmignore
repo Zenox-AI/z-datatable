@@ -1,0 +1,14 @@
+
+node_modules
+.DS_Store
+dist-ssr
+*.local
+
+.vscode
+.github
+images/
+test/
+src/
+vite.config.ts
+vite-lib.config.ts
+tsconfig.json
